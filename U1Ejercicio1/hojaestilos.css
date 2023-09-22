@@ -1,23 +1,25 @@
 body{
     margin: 0;
+    background-color: whitesmoke;
 }
 
 .topHeader {
     text-align: right;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(10, 10, 10);
     color: antiquewhite;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu;
     font-weight: 100;
 }
 
 #topHeaderOption {
     padding-left: 1%;
+    margin-right: 2%;
     
 } #topHeaderOption:hover{ color: white; }
 
 .bottomHeader{
     margin-top: 1px;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(10, 10, 10);
     display: flex;
     align-items: center;
 }
@@ -29,7 +31,8 @@ body{
 }
 
 .div3BottomHeader{
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    margin-left: 5%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu;
     font-size: large;
     width: 100%;
     font-weight: 500;
@@ -39,6 +42,7 @@ body{
 #bottomHeaderOption{
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
 }
 
 #iconoMenuHeader{
@@ -49,22 +53,34 @@ body{
 
 
 #iconoAppleHeader{
-    width: 150px;
-    padding-left: 5px;
+    width: 70px;
+    padding-left: 20%;
 }
 
 .div4BottomHeader{
-    width: fit-content;
+    display: flex;
     float: right;
 }
 
 #iconoLupa, #iconoWeb, #iconoLogin{
-    width: 10%;
-    float: right;
-    padding-left: 2%;
-    padding-right: 5%;
+    width: 40%;
+    display: inline;
 }
 
+.bannerPrincipal{
+    height: 600px;
+    display: flex;
+    background-color: black;
+}
+
+#divPremio {
+    display: block;
+}
+
+#divBanner {
+    display: block;
+    
+}
 
 
 

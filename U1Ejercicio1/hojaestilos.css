@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: whitesmoke;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu;
 }
 
 .topHeader {
@@ -12,6 +13,7 @@ body{
 }
 
 #topHeaderOption {
+    font-size: small;
     padding-left: 1%;
     margin-right: 2%;
     
@@ -79,8 +81,147 @@ body{
 
 #divBanner {
     display: block;
-    
+
 }
 
+#textoPremio {
+    color: white;
+    position: absolute;
+    margin-top: 200px;
+    display: block;
+    width: 460px;
+    text-align: center;
+}
 
+#botonVotar {
+    color: rgb(0, 0, 0);
+    background-color: rgb(243, 243, 243);
+    margin-top: 20px;
+    border-radius: 20px;
+}
 
+#textoBanner{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu;
+    margin-left: 30px;
+    margin-top: 420px;
+    color: white;
+    position: absolute;
+    text-align: left;
+}
+
+.mejorProducto {
+    display: flex;
+    flex-direction: row;
+}
+
+#textoMejorProducto{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#imagenListado{
+    border-radius: 10px;
+    outline: auto;
+}
+
+#textoListado{
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu;
+}
+
+#listadoMejorProducto{
+    display: flex;
+}
+
+#bloqueMejorProducto{
+    margin-left: 100px;
+    font-weight: 600;
+}
+
+#textoNoticias{
+    margin-top: 100px;
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.noticias{
+    display: flex;
+}
+
+#noticiaPrincipal {
+    width: 50%;
+}
+
+#noticiasSecundarias {
+    width: 50%;
+    display: block;
+}
+
+#imagenNoticiaPrincipal{
+    width: 850px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+#noticiaSuperior{
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+#noticiaInferior{
+    font-size: 20px;
+    display: flex;
+}
+
+#noticiaSuperiorIzquierda{
+    float:left;
+    margin-right: 100px;
+}
+
+#noticiaSuperiorDerecha{
+    float: right;
+}
+
+#noticiaInferiorIzquierda{
+    margin-right: 100px;
+    float: left;
+}
+
+#noticiaInferiorDerecha{
+    float: right;
+}
+
+#imagenNoticiaSecundaria{
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    outline: auto;
+}
+
+.footer1 {
+    color: whitesmoke;
+    background-color: rgb(59, 59, 59);
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.footer2 {
+    color: whitesmoke;
+    height: 100px;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    align-items: center;
+}
+
+#redesSociales{
+    margin-left: 38%;
+}
+
+#descargas {
+    margin-left: 30%;
+}

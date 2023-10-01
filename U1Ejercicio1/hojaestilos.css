@@ -131,11 +131,11 @@ body {
     width: 70%;
     margin-left: 14%;
     border-radius: 20%;
-    transition: transform .5s;
+    transition: transform .2s;
 }
 
 #imgPremio:hover {
-    transform: rotate(360deg);
+    transform: rotate(5deg);
 }
 
 #button {
@@ -194,7 +194,7 @@ body {
 }
 
 #imagenListado:hover {
-    transform: scale(1.1)
+    transform: scale(1.1);
 }
 
 #listadoMejorProducto {
@@ -244,9 +244,41 @@ body {
     outline: auto;
 }
 
+.appletvIncluded{
+    background-color: rgb(8, 84, 148);
+    color:whitesmoke;
+    
+}
+
+#nextOnAppletv{
+    margin-left: 5%;
+    padding-top: 2%;
+    margin-bottom: 1%;
+}
+
+#nextOnAppletvdisplay{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#nextOnAppletvimg{
+    margin-left: 5%;
+}
+
+#imagenAppletv{
+    width: 90%; 
+    border-radius: 20px;
+    transition: transform .2s;
+} 
+#imagenAppletv:hover{
+    transform: scale(1.1);
+}
+
 .footer1 {
+    margin-top: 5%;
     color: whitesmoke;
-    background-color: rgb(2, 15, 42, 255);
+    background-color: rgb(112, 12, 60);
     margin-bottom: 1px;
     display: flex;
     align-items: center;
@@ -255,15 +287,25 @@ body {
 .footer2 {
     color: whitesmoke;
     height: 100px;
-    background-color: rgb(2, 15, 42, 255);
+    background-color: rgb(112, 12, 60);
     display: flex;
     align-items: center;
 }
 
 #redesSociales {
-    margin-left: 38%;
+    margin-left: 8%;
+}
+
+#socialMediaIcon{
+    width: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    -webkit-filter: invert();
+    filter: invert();
+
 }
 
 #descargas {
-    margin-left: 30%;
+    margin-left: 45%;
 }
+

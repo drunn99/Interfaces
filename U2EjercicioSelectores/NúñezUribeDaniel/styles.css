@@ -1,0 +1,38 @@
+
+/*Modifica todos los <legend> dentro de <form>*/
+form legend {
+    color:#009;
+}
+
+/*Modifica los hijos p del campo form
+como solo existe uno modifica justo el que queremos*/
+form > p{
+    font-size: 22px;
+}
+
+/*Selecciona los elementos input hermanos de label y precedidos
+por estos en el código*/
+label ~ input {
+    display: block;
+}
+
+/*Selecciona los elementos adyacentes <label><input>*/
+label + input {
+    clear:both;
+}
+
+/*Selecciona los hijos de tipo <fieldset> que sean el (n+4) 
+hijo de su campo padre <form>*/
+form fieldset:nth-child(n+4){
+    margin: 5em 0;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(255, 193, 111);
+}
+

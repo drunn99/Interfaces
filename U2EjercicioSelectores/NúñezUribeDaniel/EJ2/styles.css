@@ -1,0 +1,45 @@
+table {
+    border: solid #90a4ac 1px;
+    border-collapse: collapse;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+th {
+    background-color: #90a4ac;
+    width: 150px;
+    color: whitesmoke;
+}
+
+th:first-child {
+    width: 250px;
+    text-align: left;
+}
+
+th:last-child{
+    text-align: right;
+    padding-right: 2%;
+}
+
+td {
+    font-weight: 600;
+    width: 150px;
+    text-align: center;
+}
+
+td:last-child {
+    text-align: right;
+    padding-right: 2%;
+}
+
+tr:nth-child(odd){
+    background-color: #f0f4f4;
+}
+
+tr:nth-child(even){
+    background-color:  #d9dbdb;
+}
+
+td:first-child {
+    width: 250px;
+    text-align: left;
+}

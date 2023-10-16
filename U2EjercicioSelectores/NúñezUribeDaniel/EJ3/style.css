@@ -36,6 +36,7 @@ div > div:nth-child(n+8){
 div > div:nth-child(3n+5){
     background-color: #e91e63;
 }
+*/
 /*Colorea en úlitmo elemento (20)
 div > div:last-child{
     background-color: #e91e63;

@@ -1,0 +1,12 @@
+:target{
+    background-color: yellow;
+}
+
+:target i{
+    color:red;
+}
+
+p:target::before{
+    content: "►";
+    color:greenyellow;
+}

@@ -1,0 +1,35 @@
+button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 20px;
+}
+
+header > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div > div {
+    color: white;
+    font-weight: 600;
+    padding: 2%;
+    background-color: rgb(235, 55, 55);
+}
+
+fieldset {
+    margin: 10% 20%;
+    border-color:  rgba(235, 55, 55, 0.316);
+}
+
+.block{
+    display:none;
+}
+
+:target ~ .block {
+    display: block;
+}

@@ -1,0 +1,43 @@
+body > div:first-child {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+div > div {
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    background-color: #683cb4;
+    text-align: center;
+    justify-content: center;
+    padding: 20%;
+}
+
+/*Colorea el sexto cuadrado
+div > div:nth-child(6){
+    background-color: #e91e63;
+}
+*/
+
+/*Colorea los cuadrados múltiplos de 3
+div > div:nth-child(3n){
+    background-color: #e91e63;
+}
+*/
+
+/*Colorea los cuadrados del 8 en adelante
+div > div:nth-child(n+8){
+    background-color: #e91e63;
+}
+*/
+/*Colorea los cuadrados de 3 en 3 a partir del 8
+div > div:nth-child(3n+5){
+    background-color: #e91e63;
+}
+/*Colorea en úlitmo elemento (20)
+div > div:last-child{
+    background-color: #e91e63;
+}
+*/

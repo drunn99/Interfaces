@@ -1,0 +1,73 @@
+
+/*Modifica todos los <legend> dentro de <form>.*/
+form legend {
+    color:#009;
+    font-weight: 600;
+}
+
+/*Modifica los hijos p del campo form
+como solo existe uno modifica justo el que queremos.*/
+form > p{
+    font-size: 22px;
+}
+
+/*Selecciona los elementos input hermanos de label y precedidos
+por estos en el código.*/
+label ~ input {
+    display: block;
+}
+
+/*Selecciona los elementos adyacentes <label><input>*/
+label + input {
+    clear:both;
+}
+
+/*Selecciona los hijos de tipo <fieldset> que sean el (n+4) 
+hijo de su campo padre <form>.*/
+form fieldset:nth-child(n+4){
+    margin: 5em 0;
+}
+/*Cambios personales*/
+
+/*Cambiar la fuente por defecto del body 
+(lo cual incluye a todos los contenedores de jerarquía inferior también)
+Añado también un color de fondo algo más agradable a la vista (en mi opinión, claro).*/
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+/*Centro el texto del header y coloco un color de fondo que la haga destacar algo más
+(Le he cambiado el texto porque "Esto es una cabecera" me mosqueaba jaja).*/
+header{
+    text-align: center;
+    background-color: rgb(255, 193, 111);
+}
+/*Me parecía relevante resaltar los avisos de los campos <label>
+ contenidos en las etiquetas <span>, así que he cambiado su color por rojo y añado
+ grosor a la fuente.*/
+label ~ span {
+    color: #b33131;
+    font-weight: 600;
+}
+/*Cambio ligeramente el color de fondo de cada campo <fieldset> y redondeo sus 
+bordes para evitar las esquinas y que sea más agradable a la vista (en mi opinión x2).*/
+form > fieldset {
+    border-radius: 10px;
+    background-color: beige;
+}
+/*He tocado el botón para centrarlo y hacer que "tiemble" al pasar sobre él, una 
+chorrada pero me hacía gracia*/
+button:last-child{
+    margin: 0 45%;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    font-size: larger;
+    border-radius: 10px;
+} button:hover{animation: shaking 0.4s infinite;}
+@keyframes shaking{
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-4deg);}
+    50% {transform: rotate(0deg);}
+    77% {transform: rotate(4deg);}
+    100% {transform: rotate(0deg);}
+}

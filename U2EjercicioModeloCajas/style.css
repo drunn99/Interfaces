@@ -1,0 +1,68 @@
+body{
+    background-color: #b8ccfc;
+    display: flex;
+    justify-content: center;
+    font-family: Arial,Helvetica,Verdana;
+}
+
+body > div {
+    background-color: #78a4fc ;
+    border: #1844b4 solid;
+    width: 720px;
+    height: 900px; 
+    background-image: url(logos.png);
+    background-repeat: no-repeat;
+    background-position: 15% 6%;
+}
+
+
+#LoremIpsum {
+    background-color: #1844b4;
+    color: white;
+    margin: 35% 2% 5% 2%;
+    border-bottom: #78a4fc dotted;
+    padding: 1%;
+}
+
+h1{
+    text-align: center;
+    border: white solid;
+    margin: 2% 20%;
+    padding: 2%;
+}
+
+#Phasellus{
+    background-color: #ffc444;
+    margin: 2% 10%;
+    padding: 2%;
+}
+
+h2:nth-child(4){
+    text-align: right;
+    background-image: url(patron.jpg);
+    margin: 0% 2% 0% 40%;
+    padding: 1% 0%;
+}
+
+h2:nth-child(6){
+    text-align: left;
+    background-image: url(patron.jpg);
+    margin: 0% 40% 0% 2%;
+    padding: 1% 0%;
+}
+
+#Curabitur{
+    background-image: url(computer.png);
+    background-repeat: no-repeat;
+}
+
+div > p:first-child{
+    margin-left: 35%;
+}
+
+p + ul{
+    margin-left: 35%;
+}
+
+
+

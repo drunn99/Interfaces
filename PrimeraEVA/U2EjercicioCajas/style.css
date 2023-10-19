@@ -1,0 +1,196 @@
+/*
+:root {
+    --base-padding: 50px;
+}
+*/
+
+.cajas div:nth-child(1){
+    width: 5%;
+    padding: 1% 5% 1% 1%;
+    background-color:  #0ebeff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(2){
+    width: 5%;
+    padding: 1% 8% 1% 1%;
+    background-color: #1cc6ff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(3){
+    width: 5%;
+    padding: 1% 11% 1% 1%;
+    background-color: #2bceff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(4){
+    width: 5%;
+    padding: 1% 14% 1% 1%;
+    background-color: #39d6ff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(5){
+    width: 5%;
+    padding: 1% 17% 1% 1%;
+    background-color: #47dfff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(6){
+    width: 5%;
+    padding: 1% 20% 1% 1%;
+    background-color:  #55e7ff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(7){
+    width: 5%;
+    padding: 1% 23% 1% 1%;
+    background-color: #64efff;
+    margin: 1% 0%;
+} 
+.cajas div:nth-child(8){
+    width: 5%;
+    padding: 1% 26% 1% 1%;
+    background-color: #72f7ff;
+    margin: 1% 0%;
+}
+.cajas div:nth-child(9){
+    width: 5%;
+    padding: 1% 29% 1% 1%;
+    background-color:  #80ffff;
+    margin: 1% 0%;
+}  
+
+.boxes div:nth-child(1){
+    width:10%;
+    padding: 1%;
+    background-color: #0ebeff;
+    margin: 1% 0%;
+}
+.boxes div:nth-child(2){
+    width:10%;
+    padding: 1%;
+    background-color: #1cc6ff;
+    margin: 1% 3%;
+}
+.boxes div:nth-child(3){
+    width:10%;
+    padding: 1%;
+    background-color:  #2bceff;
+    margin: 1% 6%;
+}
+.boxes div:nth-child(4){
+    width:10%;
+    padding: 1%;
+    background-color: #39d6ff;
+    margin: 1% 9%;
+}
+.boxes div:nth-child(5){
+    width:10%;
+    padding: 1%;
+    background-color: #47dfff;
+    margin: 1% 12%;
+}
+.boxes div:nth-child(6){
+    width:10%;
+    padding: 1%;
+    background-color: #55e7ff;
+    margin: 1% 15%;
+}
+.boxes div:nth-child(7){
+    width:10%;
+    padding: 1%;
+    background-color: #64efff;
+    margin: 1% 18%;
+}
+.boxes div:nth-child(8){
+    width:10%;
+    padding: 1%;
+    background-color: #72f7ff;
+    margin: 1% 21%;
+}
+.boxes div:nth-child(9){
+    width:10%;
+    padding: 1%;
+    background-color: #80ffff;
+    margin: 1% 24%;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0ebeff;
+    width: 200px;
+    height: 200px;
+}
+.square > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #1cc6ff;
+    width: 180px;
+    height: 180px;
+}
+.square > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #2bceff;
+    width: 160px;
+    height: 160px;
+}
+.square > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #39d6ff;
+    width: 140px;
+    height: 140px;
+}
+.square > div > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #47dfff;
+    width: 120px;
+    height: 120px;
+}
+.square > div > div > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #55e7ff;
+    width: 100px;
+    height: 100px;
+}
+.square > div > div > div > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #64efff;
+    width: 80px;
+    height: 80px;
+}
+.square > div > div > div > div > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #72f7ff;
+    width: 60px;
+    height: 60px;
+}
+.square > div > div > div > div > div > div > div > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #80ffff;
+    width: 40px;
+    height: 40px;
+}

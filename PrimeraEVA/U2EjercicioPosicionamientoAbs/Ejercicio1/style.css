@@ -1,0 +1,86 @@
+
+#tutto{
+    font-size: 25px;
+}
+
+#a{
+    position: absolute;
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    top: 0%;
+    left: 0%;
+}
+
+#b{
+    position: absolute;
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    top: 0%;
+    left: 320px;
+
+}
+
+#c{
+    position: absolute;
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    top: 220px;
+    left: 0%;
+}
+
+#d{
+    position: absolute;
+    background-color: lightgray;
+    width: 300px;
+    height: 200px;
+    top: 220px;
+    left: 320px;
+}
+
+#aa{
+    background-color: red;
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+}
+
+#ab{
+    background-color: blue;
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: 170px;
+    left: 180px;
+}
+
+#ac{
+    background-color: green;
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 140px;
+    left: 20px;
+}
+
+#ad{
+    background-color: yellow;
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 20px;
+    left: 180px;
+}
+
+#ba{
+    position: absolute;
+    background-color: blue;
+    height: 90px;
+    width: 160px;
+    top: 20px;
+    margin-left: 50px;
+}

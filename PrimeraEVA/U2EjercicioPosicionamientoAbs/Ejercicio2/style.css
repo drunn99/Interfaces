@@ -1,0 +1,78 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+body > div {
+    background-color: rgb(190, 190, 190);
+    height: 550px;
+}
+
+div > div:nth-child(2){
+    position: absolute;
+    left: 10%;
+    border: solid rgb(153, 112, 36);
+    width: 80%;
+    height: 10%;
+    background-color: rgba(222, 184, 135, 0.774);
+    text-align: center;
+}
+
+div > div:nth-child(3){
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    border: solid rgb(229, 240, 85);
+    width: 35%;
+    height: 15%;
+    background-color: rgba(220, 245, 75, 0.685);
+    text-align: left;
+}
+
+div > div:nth-child(4){
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    border: solid rgb(26, 73, 92);
+    width: 35%;
+    height: 15%;
+    background-color: rgba(17, 66, 224, 0.658);
+    text-align: right;
+}
+
+div > div:nth-child(5){
+    position: absolute;
+    left: 5%;
+    top: 45%;
+    border: solid rgb(218, 73, 210);
+    width: 35%;
+    height: 15%;
+    background-color: rgba(168, 43, 141, 0.589);
+    text-align: left;
+}
+
+div > div:nth-child(6){
+    position: absolute;
+    left: 60%;
+    top: 45%;
+    border: solid rgb(218, 62, 62);
+    width: 35%;
+    height: 15%;
+    background-color: rgba(240, 15, 15, 0.418);
+    text-align: right;
+}
+
+div > div:nth-child(7){
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    border: solid rgb(60, 238, 69);
+    width: 40%;
+    height: 15%;
+    background-color: rgb(90, 233, 97);
+    text-align: center;
+    z-index: 999;
+}

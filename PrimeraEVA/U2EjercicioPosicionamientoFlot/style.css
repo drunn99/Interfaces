@@ -3,15 +3,17 @@ html{
     margin: 0;
     height: 100%;
 }
+
 body{
-    margin: 0;
-    background: linear-gradient(rgb(241, 255, 158),rgb(100, 83, 252));
+    color: white;
+    margin: 5vh 0vw;
+    background: linear-gradient(rgb(255, 229, 158),rgb(100, 83, 252));
 }
 
 header{
     position: fixed;
     margin: 0;
-    background-color: rgb(241, 255, 158);
+    background-color: rgb(255, 229, 158);
     color: white;
     width: 100%;
     top: 0;
@@ -22,22 +24,23 @@ h1{
     margin: 0 0 0.5% 0;
     padding: 0 0 0.5% 1%;
 }
+
 p {
     margin: 0;
- }
+}
+
 nav{
     display: flex;
     flex-direction: row;
     background-color: rgb(50, 56, 139);
-    width: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
     justify-content: center;
     padding: 0.3% 0;
 }
 
 nav > div:nth-child(1){
     color: white;
-    width: 50%;
+    width: 90%;
     text-align: left;
     padding: 0 0 0 1%;
     overflow: hidden;
@@ -46,7 +49,7 @@ nav > div:nth-child(1){
 
 nav > div:nth-child(2){
     text-decoration: none;
-    width: 50%;
+    width: 10%;
     text-align: right;
     padding: 0 1% 0 0;
 }
@@ -61,43 +64,51 @@ a:visited{
 
 a:hover{
     color: black;
-    background: linear-gradient(rgb(50, 56, 139), rgb(241, 255, 158));
+    background: linear-gradient(rgb(50, 56, 139), rgb(255, 229, 158));
 }
 
 span ~ a{
     text-decoration: none;
 }
 
-body > div {
-    background-color: inherit;
-    height: 100%;
-    margin: 5% 0 0 0;
-    padding: 5% 0%;
-}
-
-#primeraSeccion{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-#primeraSeccion > div:nth-child(2){
-    color: white;
-    width: 50%;
-    margin: 0 1% 0 0;
-    background-color: rgb(100, 83, 252);
-    padding: 2% 2%;
-}
-
 h2{
     margin: 0;
 }
 
-#primeraSeccion > div:first-child{
+header ~ div{
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    height: 100%;
+    margin: 12vh 0 12vh 0;
+}
+
+.col{
     width: 50%;
     height: min-content;
-    margin: 0 0 0 1%;
+    background-color: inherit;
+    padding: 1vh 0 1vh 0;
+}
+
+.coli{
+    margin-right: 0.5vw;
+}
+
+.cold{
+    margin-left: 0.5vw;
+}
+
+.coli > div:first-child{
+    position: static;
     background-color: rgb(100, 83, 252);
-    padding: 1%;
+    padding: 2vw;
+}
+
+.cold > div:first-child{
+    position: static;
+    background-color: rgb(100, 83, 252);
+    margin-bottom: 2vh;
+    padding: 1vh;
 }
 
 #imagenesArt{
@@ -113,33 +124,31 @@ h2{
 }
 
 .imgart > img{
-    width: 30%;
+    width: 10vw;
     margin: 0;
 }
 
 input{
-    width: 100%;
-}
-
-#segundaSeccion{
-    position: absolute;
-    background-color: rgb(100, 83, 252);
-    width: 48%;
-    left: 52%;
-    top: 18%;
+    width: 99%;
 }
 
 #imgPrinc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 5% 0 10% 0;
-    
+    background-color: rgb(100, 83, 252);
 }
 
-#imgPrinc > img {
-    width: 70%;
-    background-color: rgb(66, 78, 74);
+#imgPrinc > div > img {
+    width: 25vw;
+    background-color: rgb(140, 156, 151); 
 }
-
-#imgPrinc ~ div {
-
+ 
+#imgPrinc > div:nth-child(2) {
+    width: 25vw;
+    padding: 2vh 0 0 0;
+    text-align: left;
+    overflow: auto;
 }

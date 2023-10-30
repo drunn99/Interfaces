@@ -10,7 +10,6 @@ ul{
 
 li{
     position: absolute;
-    top: 2%;
     margin: 0 2vw 0 2vw;
     list-style: none;
     padding: 1%;
@@ -18,37 +17,42 @@ li{
 
 li:first-child{
     background-color: aquamarine;
-    top: 2%;
-    left: 4%;
+    left: 2%;
 }
 
 
 li:nth-child(2){
     background-color: dodgerblue;
     color: white;
-    top: 2%;
-    left: 14%;
+    left: 10%;
 }
 
 li:nth-child(3){
     background-color: chartreuse;
-    top: 2%;
-    left: 24%;
+    left: 18%;
 }
 
 #primer:target{
+    padding: 1%;
     z-index: 1;
 }
 
 #segun:target{
+    padding: 1%;
     z-index: 1;
 }
 
-#terc:target{
+#terce:target{
+    padding: 1%;
     z-index: 1;
 }
+
 #primer{
     background-color: aquamarine;
+    text-align: center;
+}
+
+#primer > span {
     clear: both;
 }
 
@@ -87,4 +91,25 @@ a:hover{
 
 #primer > div:nth-child(2){
     float:right;
+}
+
+#segun > div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+}
+
+#segun > div:nth-child(2) > div{
+    width: 24%;
+    margin: 1%;
+    background: linear-gradient(dodgerblue, rgb(35, 48, 56));
+    color:white;
+}
+
+#terce > div{
+    width: 100%;
+    max-height: 70%;
+    overflow: scroll;
+    text-align: center;
+    color:white;
+    background-color: rgb(49, 99, 0);
 }

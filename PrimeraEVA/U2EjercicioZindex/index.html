@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio z-index</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div>
         <ul>
@@ -13,9 +15,18 @@
             <li><a href="#segun">Segunda</a></li>
             <li><a href="#terce">Tercera</a></li>
         </ul>
-        <div id="primer"><span>Este es el contenido de la PRIMERA PESTAÑA</span></div>
-        <div id="segun"><span>Este es el contenido de la SEGUNDA PESTAÑA</span></div>
-        <div id="terce"><span>Este es el contenido de la TERCERA PESTAÑA</span></div>
+        <div id="primer">
+            <div>Arriba izquierda</div>
+            <div>Arriba derecha</div>
+            <span>Este es el contenido de la PRIMERA PESTAÑA y usa la propiedad "clear"</span>
+        </div>
+        <div id="segun">
+            <span>Este es el contenido de la SEGUNDA PESTAÑA y usa la propiedad "display</span>
+        </div>
+        <div id="terce">
+            <span>Este es el contenido de la TERCERA PESTAÑA y usa la propiedad "overflow"</span>
+        </div>
     </div>
 </body>
+
 </html>

@@ -47,15 +47,16 @@ li:nth-child(3){
 #terc:target{
     z-index: 1;
 }
-div:nth-child(2){
+#primer{
     background-color: aquamarine;
+    clear: both;
 }
 
-div:nth-child(3){
+#segun{
     background-color: dodgerblue;
 }
 
-div:nth-child(4){
+#terce{
     background-color: chartreuse;
 }
 
@@ -66,7 +67,6 @@ ul ~ div{
     height: 20%;
     top: 8%;
     left: 3%;
-    padding: 5%;
 }
 
 a{
@@ -79,4 +79,12 @@ a:visited{
 
 a:hover{
     color:black;
+}
+
+#primer > div:nth-child(1){
+    float:left;
+}
+
+#primer > div:nth-child(2){
+    float:right;
 }

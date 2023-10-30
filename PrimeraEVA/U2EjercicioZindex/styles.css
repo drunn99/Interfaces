@@ -1,0 +1,82 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    position: absolute;
+    top: 2%;
+    margin: 0 2vw 0 2vw;
+    list-style: none;
+    padding: 1%;
+}
+
+li:first-child{
+    background-color: aquamarine;
+    top: 2%;
+    left: 4%;
+}
+
+
+li:nth-child(2){
+    background-color: dodgerblue;
+    color: white;
+    top: 2%;
+    left: 14%;
+}
+
+li:nth-child(3){
+    background-color: chartreuse;
+    top: 2%;
+    left: 24%;
+}
+
+#primer:target{
+    z-index: 1;
+}
+
+#segun:target{
+    z-index: 1;
+}
+
+#terc:target{
+    z-index: 1;
+}
+div:nth-child(2){
+    background-color: aquamarine;
+}
+
+div:nth-child(3){
+    background-color: dodgerblue;
+}
+
+div:nth-child(4){
+    background-color: chartreuse;
+}
+
+ul ~ div{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 30%;
+    height: 20%;
+    top: 8%;
+    left: 3%;
+    padding: 5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color:black;
+}

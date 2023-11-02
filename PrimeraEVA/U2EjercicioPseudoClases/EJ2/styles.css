@@ -21,6 +21,7 @@ header > div > div{
     font-weight: 600;
     padding: 2%;
     background-color: rgb(235, 55, 55);
+    z-index: 1;
 }
 
 fieldset {

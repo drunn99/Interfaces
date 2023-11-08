@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-family: monospace;
+}
+
+aside {
+    position: absolute;
+    width: 5%;
+    background-color: rgb(56, 56, 56);
+    top: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10%;
+}
+
+a:hover{
+    color: rgb(52, 52, 52);
+    background-color: dodgerblue;
+}
+
+a:not(:hover) {
+    transition: color 1s, background-color 1s;
+    color:white;
+    background-color: rgb(56, 56, 56);
+}
+

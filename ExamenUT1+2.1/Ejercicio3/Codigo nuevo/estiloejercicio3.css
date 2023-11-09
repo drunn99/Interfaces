@@ -1,0 +1,181 @@
+html {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+
+  body {
+    height: 100%;
+
+    #intro {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      * {
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    #modal {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: transparent;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: scale(0);
+      transition: transform 0.3s, border-radius 0.3s ease-in-out;
+      overflow: hidden;
+
+      &:hover {
+        &:before {
+          transform: scale(1.5);
+        }
+      }
+      &:target {
+        transform: scale(1);
+        &:before {
+          background-image: url("http://ak.picdn.net/shutterstock/videos/3435617/preview/stock-footage-modern-city-a-busy-overpass-at-sunset.jpg");
+          background-position: left top;
+          background-repeat: no-repeat;
+          background-size: cover;
+          -webkit-filter: blur(10px);
+          filter: blur(10px);
+          transition: transform 60s linear;
+          transform: scale(1);
+          transform-origin: left top;
+        }
+      }
+
+      > a {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        cursor: default;
+      }
+
+      section {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+form {
+  div {
+    position: relative;
+    min-height: 50px;
+    margin-top: 25px;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    span {
+      position: absolute;
+      z-index: 5;
+      display: block;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 50px;
+      color: #fff;
+      background-color: #ff9900;
+      font-size: 20px;
+    }
+
+    input {
+
+      &[type="email"],
+      &[type="password"] {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        padding-left: 65px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        box-sizing: border-box;
+
+        border-color: #ddd;
+        border-width: 1px;
+        border-style: solid;
+
+        transition: background-color 0.25s;
+
+        &:hover,
+        &:focus {
+          outline: none;
+          background-color: #ddd;
+        }
+      }
+    }
+
+    &.controls {
+      a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #aaa;
+
+        &:hover {
+          color: lightcoral;
+        }
+
+        &:focus {
+          color: #777;
+        }
+
+        &:active {
+          color: #666;
+        }
+      }
+    }
+
+    .button {
+      margin-left: 100px;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: #ff9900;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ff9900;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: #e5892e;
+  }
+
+  &:active {
+    background-color: #cc7a29;
+  }
+}

@@ -1,0 +1,25 @@
+.arts > div {
+    width: 200%;
+    padding: 5%;
+}
+
+h2{
+    margin-top: 0;
+}
+
+
+ul + div {  
+    display: grid;
+    gap: 20% 15%;
+    grid-template-rows: repeat(3);
+    grid-template-columns: repeat(2, 0fr);
+}
+
+div > div:target{
+    background-color: aliceblue;
+    border: 1px solid;
+}
+
+div > div:target::before{
+    content: "Vaya pufo";
+}

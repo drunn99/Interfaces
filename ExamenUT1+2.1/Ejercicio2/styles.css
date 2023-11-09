@@ -1,0 +1,24 @@
+body{
+    background-color: antiquewhite;
+    font-size: larger;
+}
+
+aside {
+    width: 10%;
+}
+
+aside > div {
+    width: 80%;
+    background-color: aliceblue;
+    margin: 3% 0%;
+    clear:right;
+}
+
+div:hover{
+    float:right;
+    background-color: dodgerblue;
+}
+
+div:active{
+    background-color: aquamarine;
+}

@@ -51,10 +51,16 @@ li > ul{
 }
 
 header > div:hover:not(div:last-child){
-    color:rgb(99, 99, 99);
+    color:rgb(124, 124, 124);
+    /*ESTO SOLO ME FUNCIONA EN FIREFOX*/
     ul > li > ul{
         height: 120px;
     }
+}
+
+/*PARA OTROS NAVEGADORES*/
+div:hover:not(div:last-child) > ul > li > ul{
+    height: 120px;
 }
 
 p + ul > a{

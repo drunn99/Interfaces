@@ -87,6 +87,120 @@ body>div {
     text-align: center;
 }
 
+/* - - - DEMO 1 - - - */
+
+#demo1:target {
+    display: initial;
+}
+
+.mascara1 {
+    background-color: rgb(199, 255, 236);
+    opacity: 0;
+}
+
+.content1 {
+    >h2 {
+        position: absolute;
+        top: -200px;
+        width: 100%;
+        background-color: azure;
+        padding: 1% 0% 1% 0%;
+    }
+
+    >p {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+    }
+
+    >a {
+        position: absolute;
+        top: 160px;
+        left: 120px;
+        padding: 2%;
+        border-radius: 5px;
+        background-color: bisque;
+        text-decoration: none;
+        color: black;
+        opacity: 0;
+    }
+}
+
+.vista1:hover {
+    >img {
+        z-index: 1;
+        transform: scale(1.1);
+        transition: all 0.2s;
+    }
+
+    >.mascara1 {
+        z-index: 2;
+        opacity: .4;
+        transition: all 0.5s;
+    }
+
+    >.content1 {
+        >h2 {
+            z-index: 3;
+            transform: translateY(200px);
+            transition: 0.2s;
+        }
+
+        >p {
+            font-size: larger;
+            z-index: 3;
+            transform: translateY(-120px);
+            transition: 0.2s;
+            transition-delay: 0.2s;
+            color: rgb(0, 0, 0);
+        }
+
+        >a {
+            z-index: 3;
+            opacity: 1;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.vista1:not(:hover) {
+    >img {
+        z-index: 0;
+        transition: all 0.2s;
+    }
+
+    >.mascara1 {
+        z-index: 0;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    >.content1 {
+        >h2 {
+            z-index: 0;
+            transform: translateY(0);
+            transition: 0.2s;
+        }
+
+        >p {
+            font-size: larger;
+            z-index: 0;
+            transform: translateY(-0);
+            transition: 0.2s;
+            color: rgb(0, 0, 0);
+        }
+
+        >a {
+            z-index: 0;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+    }
+}
+
+
+
+
 /* - - - DEMO 2 - - - */
 
 #demo2:target {
@@ -122,8 +236,8 @@ body>div {
         top: 300px;
         left: 120px;
         background-color: aliceblue;
-        border-radius: 10px;
-        padding: 1%;
+        border-radius: 5px;
+        padding: 2%;
         color: black;
         text-decoration: none;
     }
@@ -135,7 +249,7 @@ body>div {
         transition: all 0.3s;
     }
 
-    >.content {
+    >.content2 {
         >h2 {
             transform: translate(-200px, 300px);
             transition: all 0.2s;
@@ -162,7 +276,7 @@ body>div {
         transition: all 0.3s;
     }
 
-    >.content {
+    >.content2 {
         >h2 {
             transform: translate(0, 0);
             transition: all 0.4s;
@@ -176,6 +290,72 @@ body>div {
         >a {
             transform: translate(0px, 0);
             transition: all 0.4s;
+        }
+    }
+}
+
+
+
+/* - - - DEMO 3 - - - */
+
+#demo3:target {
+    display: initial;
+}
+
+.mascara3 {
+    background-color: rgba(255, 0, 0, 0.332);
+    height: 300px;
+    transform: translate(300px, -200px);
+}
+
+.content3 {
+    >h2 {
+        background-color: rgb(0, 0, 0);
+        color:whitesmoke;
+        position: absolute;
+        top: -300px;
+        width: 100%;
+    }
+
+    > p{
+        width:100%;
+        rotate: 90deg;
+        translate: 300px;
+    }
+
+    > a {
+        position: absolute;
+        top: -200px;
+        left: 120px;
+    }
+
+}
+
+.vista3:hover {
+    >.mascara3 {
+        transform: rotate(-90deg);
+        transition: all 0.2s;
+    }
+
+    >.content3 {
+        >h2 {
+            transform: translateY(300px);
+            transition: 0.2s;
+            transition-delay: 0.5s;
+        }
+
+        >p {
+            font-size: larger;
+            transform: translate(50px,300px) rotate(-90deg);
+            transition: all 0.2s;
+            transition-delay: 0.4s;
+            color: rgb(0, 0, 0);
+        }
+
+        >a {
+            transform: translateY(350px);
+            transition: all 0.2s;
+            transition-delay: 0.5s;
         }
     }
 }
@@ -205,11 +385,11 @@ body>div {
 
     >a {
         width: 20%;
-        padding: 1%;
+        padding: 2%;
         margin-bottom: 5%;
         color: white;
         background-color: rgb(67, 67, 67);
-        border-radius: 10px;
+        border-radius: 5px;
         text-decoration: none;
     }
 }

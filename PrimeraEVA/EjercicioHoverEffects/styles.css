@@ -4,7 +4,7 @@ Para moverte entre líneas usa Ctrl + G y después indica el número de línea s
 - Demo 2 -> 213
 - Demo 3 -> 308
 - Demo 4 -> 406
-- Demo 5 -> 475
+- Demo 5 -> 512
 */
 
 body {
@@ -320,19 +320,19 @@ body>div {
 .content3 {
     >h2 {
         background-color: rgb(0, 0, 0);
-        color:whitesmoke;
+        color: whitesmoke;
         position: absolute;
         top: -300px;
         width: 100%;
     }
 
-    > p{
-        width:100%;
+    >p {
+        width: 100%;
         rotate: 90deg;
         translate: 300px;
     }
 
-    > a {
+    >a {
         position: absolute;
         top: -200px;
         left: 120px;
@@ -360,7 +360,7 @@ body>div {
 
         >p {
             font-size: larger;
-            transform: translate(50px,300px) rotate(-90deg);
+            transform: translate(50px, 300px) rotate(-90deg);
             transition: all 0.2s;
             transition-delay: 0.4s;
             color: rgb(0, 0, 0);
@@ -405,34 +405,38 @@ body>div {
 
 /* - - - DEMO 4 - - - */
 
-#demo4:target{
+#demo4:target {
     display: initial;
 }
 
-.vista4{
+.vista4 {
     background-image: url(img/stars.png);
-    > img {
+
+    >img {
         opacity: 1;
     }
 }
 
-.mascara4{
+.mascara4 {
     background-color: rgba(163, 163, 163, 0.438);
     transform: scale(0) rotate(-180deg);
-    color:white;
-    > h2 {
+    color: white;
+
+    >h2 {
         width: 100%;
         background-color: orangered;
+        opacity: 0;
     }
 
-    > p {
+    >p {
         position: absolute;
         top: 40%;
         width: 100%;
+        opacity: 0;
     }
 
-    > a{
-        color:white;
+    >a {
+        color: white;
         text-decoration: none;
         position: absolute;
         top: 75%;
@@ -440,34 +444,67 @@ body>div {
         background-color: orangered;
         border-radius: 5px;
         padding: 1%;
+        opacity: 0;
     }
 }
 
-.vista4:hover{
-    > img {
+.vista4:hover {
+    >img {
         transform: scale(0);
         opacity: 0.1;
         transition: all 0.5s;
     }
 
-    > .mascara4{
+    >.mascara4 {
         transform: scale(1) rotate(0);
         transition: all 0.5s;
         transition-delay: 0.3s;
+
+        >h2 {
+            opacity: 1;
+            transition: all 0.3s;
+            transition-delay: 0.5s;
+        }
+
+        > p {
+            opacity: 1;
+            transition: all 0.3s;
+            transition-delay: 0.5s;
+        }
+
+        > a {
+            opacity: 1;
+            transition: all 0.3s;
+            transition-delay: 0.5s;
+        }
     }
 }
 
-.vista4:not(:hover){
-    > img {
+.vista4:not(:hover) {
+    >img {
         transform: scale(1);
         opacity: 1;
         transition: all 0.5s;
         transition-delay: 0.3s;
     }
 
-    > .mascara4{
+    >.mascara4 {
         transform: scale(0) rotate(-180deg);
         transition: all 0.5s;
+        >h2 {
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        > p {
+            opacity: 0;
+            transition: all 0.3s;
+        }
+
+        > a {
+            opacity: 0;
+            transition: all 0.3s;
+        }
     }
 }
 

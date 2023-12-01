@@ -1,3 +1,9 @@
+/*
+Para moverte entre líneas usa Ctrl + G y después indica el número de línea según el índice
+- Demo 1 -> 96
+- Demo 2 -> 210
+*/
+
 body {
     background-color: darkgrey;
     font-family: monospace;
@@ -393,6 +399,74 @@ body>div {
     }
 }
 
+
+/* - - - DEMO 4 - - - */
+
+#demo4:target{
+    display: initial;
+}
+
+.vista4{
+    background-image: url(img/stars.png);
+    > img {
+        opacity: 1;
+    }
+}
+
+.mascara4{
+    background-color: rgba(163, 163, 163, 0.438);
+    transform: scale(0) rotate(-180deg);
+    color:white;
+    > h2 {
+        width: 100%;
+        background-color: orangered;
+    }
+
+    > p {
+        position: absolute;
+        top: 40%;
+        width: 100%;
+    }
+
+    > a{
+        color:white;
+        text-decoration: none;
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        background-color: orangered;
+        border-radius: 5px;
+        padding: 1%;
+    }
+}
+
+.vista4:hover{
+    > img {
+        transform: scale(0);
+        opacity: 0.1;
+        transition: all 0.5s;
+    }
+
+    > .mascara4{
+        transform: scale(1) rotate(0);
+        transition: all 0.5s;
+        transition-delay: 0.3s;
+    }
+}
+
+.vista4:not(:hover){
+    > img {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.5s;
+        transition-delay: 0.3s;
+    }
+
+    > .mascara4{
+        transform: scale(0) rotate(-180deg);
+        transition: all 0.5s;
+    }
+}
 
 
 /* - - - DEMO 5 - - - */

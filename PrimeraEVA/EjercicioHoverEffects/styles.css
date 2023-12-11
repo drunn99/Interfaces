@@ -466,13 +466,13 @@ body>div {
             transition-delay: 0.5s;
         }
 
-        > p {
+        >p {
             opacity: 1;
             transition: all 0.3s;
             transition-delay: 0.5s;
         }
 
-        > a {
+        >a {
             opacity: 1;
             transition: all 0.3s;
             transition-delay: 0.5s;
@@ -491,17 +491,18 @@ body>div {
     >.mascara4 {
         transform: scale(0) rotate(-180deg);
         transition: all 0.5s;
+
         >h2 {
             opacity: 0;
             transition: all 0.3s;
         }
 
-        > p {
+        >p {
             opacity: 0;
             transition: all 0.3s;
         }
 
-        > a {
+        >a {
             opacity: 0;
             transition: all 0.3s;
         }
@@ -562,5 +563,94 @@ body>div {
     >img {
         transform: translateX(0px);
         transition: all 0.3s ease-in;
+    }
+}
+
+/* - - - DEMO 6 - - - */
+
+#demo6:target {
+    display: initial;
+}
+
+.mascara6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:white;
+
+    >h1 {
+        transform: scale(4);
+        opacity: 0;
+        border-bottom: solid black 1px;
+    }
+
+    >p {
+        font-size: large;
+        transform: scale(4);
+        opacity: 0;
+        font-weight: 600;
+    }
+
+    >a {
+        color: white;
+        text-decoration: none;
+        width: 20%;
+        background-color: darkred;
+        transform: translate(115px, 100px);
+        border-radius: 5px;
+        padding: 1%;
+    }
+}
+
+.vista6:hover {
+    >.mascara6 {
+        background-color: rgba(251, 64, 101, 0.506);
+        transition: 0.5s;
+
+        >h1 {
+            transform: scale(1);
+            opacity: 1;
+            transition: 0.2s;
+            transition-delay: 0.2s;
+        }
+
+        >p {
+            transform: scale(1);
+            opacity: 1;
+            transition: 0.4s;
+            transition-delay: 0.2s;
+        }
+
+        >a {
+            transform: translate(115px, 0px);
+            transition: 0.3s;
+            transition-delay: 0.2s;
+            margin-bottom: 5%;
+        }
+    }
+}
+
+.vista6:not(:hover) {
+    >.mascara6 {
+        background-color: none;
+        transition: 0.5s;
+        transition-delay: 0.3s;
+
+        >h1 {
+            transform: scale(5);
+            opacity: 0;
+            transition: 0.2s;
+        }
+
+        >p {
+            transform:scale(4);
+            opacity: 0;
+            transition: 0.4s;
+        }
+
+        >a{
+            transform: translate(115px,100px);
+            transition: 0.3s;
+        }
     }
 }

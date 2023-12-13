@@ -1,12 +1,14 @@
 /*
-Para moverte entre líneas usa Ctrl + G y después indica el número de línea según el índice
-- Demo 1 -> 99
-- Demo 2 -> 213
-- Demo 3 -> 308
-- Demo 4 -> 406
-- Demo 5 -> 512
+Para moverte entre líneas usa Ctrl + G y después indica el número de línea según el índice.
+- Demo 1 -> 101
+- Demo 2 -> 215
+- Demo 3 -> 310
+- Demo 4 -> 408
+- Demo 5 -> 515
+- Demo 6 -> 571
 */
 
+/* Estilos generales */
 body {
     background-color: darkgrey;
     font-family: monospace;
@@ -654,3 +656,6 @@ body>div {
         }
     }
 }
+
+
+/* - - - DEMO 7 - - - */

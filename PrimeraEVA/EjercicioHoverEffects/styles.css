@@ -1,11 +1,13 @@
 /*
 Para moverte entre líneas usa Ctrl + G y después indica el número de línea según el índice.
-- Demo 1 -> 101
-- Demo 2 -> 215
-- Demo 3 -> 310
-- Demo 4 -> 408
-- Demo 5 -> 515
-- Demo 6 -> 571
+- Demo 1 -> 109
+- Demo 2 -> 223
+- Demo 3 -> 318
+- Demo 4 -> 416
+- Demo 5 -> 523
+- Demo 6 -> 579
+- Demo 7 -> 669
+- Demo 8 -> 767
 */
 
 /* Estilos generales */
@@ -670,12 +672,13 @@ body>div {
     display: initial;
 }
 
-.vista7{
+.vista7 {
     background-image: url(img/mhw\ \(1\).jpg);
 }
 
 .mascara7 {
     color: aliceblue;
+
     h1 {
         position: absolute;
         transform: translateY(-200px);
@@ -733,6 +736,7 @@ body>div {
         background-color: none;
         transition: 0.5s;
         transition-delay: 0.6s;
+
         >h1 {
             transform: translateY(-200px);
             transition: 0.3s;
@@ -758,4 +762,66 @@ body>div {
         transition: 0.5s;
         transition-delay: 0.8s;
     }
+}
+
+/* - - - DEMO 8 - - - */
+
+#demo8:target {
+    display: initial;
+}
+
+.mascara8 {
+    background-color: rgba(128, 128, 128, 0.65);
+    transform: translateY(-200px);
+    transition: all 0.3s ease-out 0.5s;
+
+    >h1 {
+        background-color: rgb(179, 70, 70);
+        position: relative;
+        border: solid black 1px;
+        transform: translateY(-200px);
+        transition: all 0.2s ease-in-out 0.1s
+    }
+
+    p{
+        color:white;
+        transform: translateY(-200px);
+        transition: all 0.2s ease-in-out 0.2s;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: grey;
+        color: white;
+        padding: 1%;
+        border-radius: 5px;
+        transform: translateY(-200px);
+        transition: all 0.2s ease-in-out 0.2s;
+    }
+}
+
+.vista8:hover {
+    .mascara8 {
+        transform: translateY(0px);
+        transition: 0.6s;
+        animation: bounceY 0.9s linear;
+        >h1 {
+            transform: translateY(0px);
+            transition-delay: 0.6s;
+        }
+
+        >p{
+            transform: translateY(0px);
+            transition: 1s;
+        }
+    }
+}
+
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
 }

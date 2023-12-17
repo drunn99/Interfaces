@@ -12,7 +12,7 @@ Para moverte entre líneas usa Ctrl + G y después indica el número de línea s
 
 /* Estilos generales */
 body {
-    background-color: darkgrey;
+    background-color: rgb(70, 70, 70);
     font-family: monospace;
     margin: 0;
 }
@@ -25,20 +25,22 @@ header {
     top: 0;
     color: white;
     background-color: darkslategray;
-    box-shadow: 0px 0px 40px gray inset;
     font-weight: 600;
 }
 
-h1 {
+header~h1 {
+    color: rgb(53, 53, 53);
+    width: 100%;
+    background-color: aliceblue;
     text-align: center;
-    margin: 2% 0 0 0;
+    margin: 0 0 5% 0;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
-:not(.mascara)>h1+p {
-    color: aliceblue;
+h2 {
     text-align: center;
-    font-size: large;
-    margin-bottom: 2%;
+    margin: 2% 0 0 0;
 }
 
 ul {
@@ -47,15 +49,18 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    margin-top: 5%;
 }
 
 ul>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 8%;
     background-color: aliceblue;
     border-radius: 10px;
     padding: 0.3%;
-    margin: 0 1%;
+    margin: 0 0.8%;
     list-style: none;
     text-decoration: none;
 }
@@ -75,7 +80,7 @@ body>div {
     row-gap: 15%;
     column-gap: 5%;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .vista {
@@ -128,7 +133,7 @@ body>div {
 
     >p {
         position: absolute;
-        top: 200px;
+        top: 190px;
         width: 100%;
     }
 
@@ -440,7 +445,7 @@ body>div {
 
     >p {
         position: absolute;
-        top: 40%;
+        top: 30%;
         width: 100%;
         opacity: 0;
     }
@@ -848,6 +853,87 @@ body>div {
     }
 }
 
+
+/* - - - Demo 9 - - - */
+
+#demo9:target {
+    display: initial;
+}
+
+.mascara9_1 {
+    width: 361px;
+    height: 361px;
+    background-color: rgba(0, 255, 170, 0.5);
+    border: 2px solid rgba(0, 255, 170);
+    transform: translate(-361px, -361px) rotate(56.5deg);
+}
+
+.mascara9_2 {
+    width: 361px;
+    height: 361px;
+    background-color: rgba(0, 255, 170, 0.5);
+    border: 2px solid rgba(0, 255, 170);
+    transform: translate(361px, 361px) rotate(56.5deg);
+}
+
+.mascara9 {
+    overflow: hidden;
+    width: 361px;
+    height: 0px;
+    background-color: rgba(0, 0, 0, 0.507);
+    transform: translate(-32px, 100px) rotate(-33.5deg);
+    color: white;
+
+    >a {
+        color: rgb(0, 59, 32);
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        padding: 1%;
+        border-radius: 5px;
+    }
+}
+
+.vista9:hover {
+    >.mascara9_1 {
+        transform: translate(-132px, -232px) rotate(56.5deg);
+        transition: 0.3s;
+    }
+
+    >.mascara9_2 {
+        transform: translate(68px, 72px) rotate(56.5deg);
+        transition: 0.3s;
+    }
+
+    .mascara9 {
+        width: 300px;
+        height: 150px;
+        transform: translate(0px, 25px) rotate(0deg);
+        transition: 0.5s;
+        transition-delay: 0.3s;
+    }
+}
+
+.vista:not(:hover) {
+    >.mascara9_1 {
+        transform: translate(-361px, -361px) rotate(56.5deg);
+        transition: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    >.mascara9_2 {
+        transform: translate(361px, 361px) rotate(56.5deg);
+        transition: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    .mascara9 {
+        width: 361px;
+        height: 0px;
+        transform: translate(-32px, 100px) rotate(-33.5deg);
+        transition: 0.3s;
+    }
+}
+
 /* - - - Demo 10 - - - */
 
 #demo10:target {
@@ -862,6 +948,7 @@ body>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     background-color: rgba(240, 255, 255, 0.67);
 
     >h1 {
@@ -876,9 +963,15 @@ body>div {
     }
 
     >a {
+        width: 20%;
+        color: white;
+        background-color: rgb(138, 117, 0);
         margin-bottom: 20px;
         transform: scale(0);
         opacity: 0;
+        text-decoration: none;
+        padding: 1%;
+        border-radius: 5px;
     }
 }
 
@@ -895,6 +988,7 @@ body>div {
     }
 
     >img {
+        pointer-events: none;
         transform: scale(4);
         opacity: 0;
         transition: 0.8s;
@@ -902,7 +996,8 @@ body>div {
 }
 
 .vista10:not(:hover) {
-    >.mascara10 {   
+    >.mascara10 {
+
         >h1,
         p,
         a {

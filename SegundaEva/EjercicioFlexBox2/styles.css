@@ -1,0 +1,172 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: salmon;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    >h1 {
+        margin: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.tab {
+    position: absolute;
+    background-color: rgb(211, 234, 255);
+    padding: 2%;
+
+    h3 {
+        margin: 0;
+    }
+}
+
+#tab1:not(:target),
+#tab2:not(:target),
+#tab3:not(:target) {
+    visibility: hidden;
+}
+
+#tab1:target,
+#tab2:target,
+#tab3:target {
+    z-index: 2;
+}
+
+/* Estilos por ancho de pantalla */
+@media screen and (min-width: 1400px) {
+    #container {
+        position: relative;
+        margin: 3% 0% 0% 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        >#tabs {
+            display: flex;
+            flex-direction: column;
+
+            >a {
+                width: 100%;
+                margin: 5% 0%;
+                background-color: rgb(223, 239, 255);
+            }
+        }
+
+        >#content {
+            >.tab {
+                width: 80%;
+            }
+
+            >#tab1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                >div {
+                    width: 30%;
+
+                    >h3 {
+                        color: salmon;
+                    }
+                }
+            }
+
+            #tab2 {
+                >div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 3vw;
+                }
+            }
+
+            >#tab3 {
+                display: flex;
+                flex-direction: column;
+
+                >div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    text-align: center;
+                    >div > h3 {
+                        margin-top: 3%;
+                        color: salmon;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #container {
+        position: relative;
+        margin: 3% 0% 0% 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        >#tabs {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            >a {
+                width: 100%;
+                margin: 0% 3%;
+                background-color: rgb(223, 239, 255);
+            }
+        }
+
+        >#content {
+            >#tab1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                >div {
+                    >h3 {
+                        color: salmon;
+                    }
+                }
+            }
+
+            #tab2 {
+                >div {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            >#tab3 {
+                display: flex;
+                flex-direction: column;
+                >div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    text-align: center;
+                    >div > h3 {
+                        margin-top: 3%;
+                        color: salmon;
+                    }
+                }
+            }
+        }
+    }
+}

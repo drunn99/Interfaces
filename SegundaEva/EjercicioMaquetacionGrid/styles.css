@@ -1,0 +1,21 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 10px;
+}
+
+header{
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: lightgray;
+}
+
+.derecha{
+    grid-area: 1 / 3 / 4 / 3;
+    background-color: lightgrey;
+}
+
+.izquierda{
+    grid-area: 2 / 1 / 4 / 2;
+    background-color: aliceblue;
+}

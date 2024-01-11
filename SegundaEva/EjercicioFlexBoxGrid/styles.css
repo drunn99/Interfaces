@@ -145,7 +145,36 @@ body {
 #nesting {
     width: 80%;
     display: flex;
-    flex-direction: row;
+
+    @media (min-width:800px) {
+        flex-direction: row;
+
+        .fChild {
+            width: 33.33%;
+            height: min-content;
+        }
+
+        .lChild {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+    }
+
+    @media (max-width:799px) {
+        flex-direction: column;
+
+        .fChild {
+            flex: 1;
+            height: min-content;
+        }
+
+        .lChild {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    }
 
     div {
         background-color: rgba(51, 153, 204, .2);
@@ -154,35 +183,37 @@ body {
         margin: 1% 1%;
         border-radius: 5px;
     }
+}
 
-    >div:first-child {
-        width: 33.33%;
-        height: min-content;
-    }
+/* Vertical Alignment */
 
-    >div:last-child {
+#vAlignment {
+    width: 80%;
+
+    .alignmentRow {
         display: flex;
         flex-direction: row;
-        flex: 1;
 
-        >div:first-child {
-            width: 33.33%;
-            height: min-content;
+        >div {
+            background-color: rgba(51, 153, 204, .2);
+            border: 1px solid #33cccc;
+            padding: 1% 1%;
+            margin: 1% 1%;
+            border-radius: 5px;
+            width: 50%;
+            height: fit-content;
         }
+    }
 
-        >div:last-child {
-            display: flex;
-            flex-direction: row;
-            flex: 1;
+    .row1{
+        align-items: flex-start;
+    }
 
-            >div:first-child {
-                width: 33.33%;
-                height: fit-content;
-            }
+    .row2{
+        align-items: center;
+    }
 
-            >div:last-child {
-                flex: 1;
-            }
-        }
+    .row3{
+        align-items: flex-end;
     }
 }

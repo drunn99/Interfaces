@@ -1,0 +1,58 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    >li{
+        cursor: pointer;
+        width: 15%;
+        height: 50px;
+        list-style: none;
+        position: relative;
+        overflow: hidden;
+        >a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        >.black{
+            background-color: black;
+            color: white;
+            z-index: 2;
+        }
+        >.white{
+            background-color: aliceblue;
+            color:black;
+            top: 50px;
+            z-index: 1;
+        }
+    }
+    >li:hover{
+        >.black{
+            transform: translateY(-50px);
+            transition: 0.3s;
+        }
+        >.white{
+            transform: translateY(-50px);
+            transition: 0.3s;
+        }
+    }
+    >li:not(:hover){
+        >.black{
+            transform: translateY(0px);
+            transition: 0.3s;
+        }
+        >.white{
+            transform: translateY(0px);
+            transition: 0.3s;
+        }
+    }
+}

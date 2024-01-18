@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.info-box {
+    height: 800px;
+    background-color: black;
+    color: white;
+
+    >#flex-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        >p {
+            flex-basis: 400px;
+            margin: 5% 50px;
+            text-align: center;
+
+            >.fas {
+                background-color: white;
+                border: none;
+                filter:invert(100%);
+                width: 128px;
+                height: 128px;
+            }
+            >.fa-star{
+                background-image: url(icons/silueta-de-estrella-negra.png);
+            }
+            >.fa-thumbs-up{
+                background-image: url(icons/pulgar-arriba.png)
+            }
+            >.fa-check{
+                background-image: url(icons/icons8-marca-de-verificación-de-instagram-100.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        }
+        @media (min-width: 600px){
+            >p:first-child{
+                order: +1;
+            }
+            >p:last-child{
+                order: -2;
+            }
+        }
+    }
+}
